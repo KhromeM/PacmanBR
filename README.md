@@ -10,7 +10,7 @@ https://github.com/KhromeM <br/>
 https://www.linkedin.com/in/khurram-mustafa-435b16177/
 <br/>
 <br/>
-**Angela Qiao**  <br/> <br/>
+**Angela Qiao**  <br/>https://github.com/angela4321 <br/> <br/>
 
 **Jillian Dhawan** <br/> https://www.linkedin.com/in/jilliandhawan/<br/> <br/>
 
