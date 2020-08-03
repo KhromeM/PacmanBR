@@ -60,6 +60,7 @@ class Ghost{
     this.d=d;
   }
   
+  //sets the direction of the ghost to move towards the pacman
   path(pacman){
     if(pacman===null){
       this.d = round(random(0,4));
@@ -67,10 +68,10 @@ class Ghost{
     }
     
     let gridSize = 3;
-    let mat = map.makeMatrix(gridSize,this.w,pacman);
+    let mat = map.makeMatrix(gridSize,this.w,pacman); //matrix of valid and invalid positions and pacman position
     let parent = [];
     let dist = [];
-    let f = [];
+    let f = []; //keeps track of distance to every position from ghost plus predicted distance to pacman
     
     let start = [(this.x-this.x%gridSize)/gridSize, (this.y-this.y%gridSize)/gridSize];
     let end = [];

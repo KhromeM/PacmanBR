@@ -97,6 +97,7 @@ class Map1{
      
   }
   
+  //draws a border around the screen
   makeBorder(){
     this.parts.push(new Part(0,0,20,height));
     this.parts.push(new Part(0,0,width,20));
@@ -113,6 +114,7 @@ class Map1{
     }
   }
   
+  //collision with walls
   checkCollision(x,y,w,h){
     for(let i = 0; i < this.parts.length; i++){
       if(this.parts[i].checkCollision(x,y,w,h)) return true;
@@ -120,7 +122,7 @@ class Map1{
     return false;
   }
   
-  
+  //divides map into a grid and returns matrix of valid and invalid positions of ghost and position of pacman
   makeMatrix(gridSize,ghostSize,pacman){
     let valid = [];
     for(let i = 0; i < width/gridSize; i++){
@@ -145,6 +147,7 @@ class Map1{
       }
     }
     
+    //find position of pacman
     let x = (pacman.position[0]-pacman.position[0]%gridSize)/gridSize+1;
     let y = (pacman.position[1]-pacman.position[1]%gridSize)/gridSize+1;
     valid[x][y] = 2;
